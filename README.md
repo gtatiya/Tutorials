@@ -6,6 +6,6 @@
 
 ## Python Environment
 
-- Configuring PyCharm with Python interpreter (Python/Configuring PyCharm with Python interpreter.txt)
+- Configuring PyCharm with Python interpreter (https://github.com/gtatiya/Tutorials/Python/ConfiguringPyCharmWithPythonInterpreter.md)
 
 
