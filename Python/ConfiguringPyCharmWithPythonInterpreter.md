@@ -14,5 +14,5 @@
 	- Use the configuration matrix.
 	- Paste the command into your Pycharm Terminal
 - To install TensorFlow 
-	- If you have GPU: `pip install tensorflow-gpu`
+	- If you have GPU (not supported on Mac): `pip install tensorflow-gpu`
 	- If you don’t have GPU: `pip install tensorflow`
