@@ -19,8 +19,10 @@ Now that you know version of Nvidia driver, CUDA and cuDNN, you just need to ins
 ## Installing Nvidia Driver
 
 - Add the graphics drivers PPA:
-	`sudo add-apt-repository ppa:graphics-drivers`
-	`sudo apt-get update`
+```
+sudo add-apt-repository ppa:graphics-drivers
+sudo apt-get update
+```
 
 - Install Nvidia Driver for CUDA 9:
 	`sudo apt-get install nvidia-384`
