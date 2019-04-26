@@ -64,6 +64,8 @@ sudo sh cuda_9.0.176.4_linux.run
 
 While installation select <b> NO </b> for Install NVIDIA Accelerated Graphics Driver for Linux-x86_64 387.26?
 
+- Reboot your computer
+
 - Open your bashrc: `gedit ~/.bashrc` and add these lines to the bottom and save:
 
 ```

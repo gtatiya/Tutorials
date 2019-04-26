@@ -13,7 +13,7 @@
 - In your local web browser, go to https://www.anaconda.com/ > Download > Linux > Right-click the "64bit x86" link, copy URL
 - Do this on a compute node:
 - wget the URL 
-	- In my case, wget https://repo.anaconda.com/archive/Anaconda3-2019.03-Linux-x86_64.sh
+	- In my case, `wget https://repo.anaconda.com/archive/Anaconda3-2019.03-Linux-x86_64.sh`
 - Run it: `bash Anaconda3-2019.03-Linux-x86_64.sh` 
 	- Accept license
 	- Installation directory: 
