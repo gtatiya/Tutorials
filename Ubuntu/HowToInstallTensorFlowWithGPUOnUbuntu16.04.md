@@ -35,7 +35,7 @@ sudo apt-get update
 
 ## Installing CUDA
 
-- Download `CUDA 9`: https://developer.nvidia.com/cuda-90-download-archive?target_os=Linux&target_arch=x86_64&target_distro=Ubuntu&target_version=1604&target_type=runfilelocal
+- Download `CUDA 9`: https://developer.nvidia.com/cuda-90-download-archive?target_os=Linux&target_arch=x86_64&target_distro=Ubuntu&target_version=1604&target_type=runfilelocal <br>
 Here's the list of all the CUDA versions: https://developer.nvidia.com/cuda-toolkit-archive
 
 - Press `Ctrl+Alt+F1` and login using your credentials
@@ -62,7 +62,7 @@ sudo sh cuda_9.0.176.3_linux.run
 sudo sh cuda_9.0.176.4_linux.run
 ```
 
-While installation select <b> NO <b> for Install NVIDIA Accelerated Graphics Driver for Linux-x86_64 387.26?
+While installation select <b> NO </b> for Install NVIDIA Accelerated Graphics Driver for Linux-x86_64 387.26?
 
 - Open your bashrc: `gedit ~/.bashrc` and add these lines to the bottom and save:
 
@@ -80,7 +80,7 @@ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda/extras/CUPTI/lib64
 
 ## Installing cuDNN
 
-- Download `cuDNN 7`: https://developer.nvidia.com/compute/machine-learning/cudnn/secure/v7.0.5/prod/9.0_20171129/cudnn-9.0-linux-x64-v7
+- Download `cuDNN 7`: https://developer.nvidia.com/compute/machine-learning/cudnn/secure/v7.0.5/prod/9.0_20171129/cudnn-9.0-linux-x64-v7 <br>
 Here's the list of all the cuDNN versions: https://developer.nvidia.com/rdp/cudnn-archive
 
 - Extract the cudnn-9.0-linux-x64-v7.tgz
