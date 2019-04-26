@@ -30,5 +30,4 @@
 - To install TensorFlow: 
 	- Browse to https://tensorflow.org/install/ > GPU Guide
 	- Run this on a compute node: `pip install tensorflow-gpu`
-- Total time for me: about 10 mins
-- Total disk space for me: 7G
+- To create a separate environment, use `conda create -n py2 python=2 numpy matplotlib tensorflow-gpu jupyter`. Then use can activate this environment by `conda activate py2`.
