@@ -7,4 +7,4 @@
 
 ## Ubuntu
 
-- [How to install TensorFlow with GPU on Ubuntu 16.04?]()
+- [How to install TensorFlow with GPU on Ubuntu 16.04?](https://github.com/gtatiya/Tutorials/blob/master/Ubuntu/HowToInstallTensorFlowWithGPUOnUbuntu16.04.md)
