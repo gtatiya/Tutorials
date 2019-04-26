@@ -99,4 +99,14 @@ sudo chmod a+r /usr/local/cuda/lib64/libcudnn*
 
 - `pip install tensorflow-gpu==1.12.0`
 
+- Run a short TensorFlow program
+
+```
+python
+import tensorflow as tf
+hello = tf.constant('Hello, TensorFlow!')
+sess = tf.Session()
+print(sess.run(hello))
+```
+
 - More info: https://www.tensorflow.org/install/
