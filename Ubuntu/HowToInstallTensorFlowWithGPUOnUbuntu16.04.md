@@ -29,7 +29,7 @@ sudo apt-get update
 
 - Reboot your computer
 
-- Run `nvidia-smi` and check your Nvidia Driver versiona and GPU.
+- Run `nvidia-smi` and check your Nvidia Driver version and GPU.
 
 - If you want to delete this installation, run `sudo apt-get purge nvidia*`
 
@@ -76,7 +76,7 @@ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda/extras/CUPTI/lib64
 
 - Configure dynamic linker run-time bindings: `sudo ldconfig`
 
-- Run `nvcc --version` and check your CUDA versiona.
+- Run `nvcc --version` and check your CUDA version.
 
 - If you want to delete this installation, run `sudo /usr/local/cuda-9.1/bin/uninstall_cuda_9.0.pl` 
 
