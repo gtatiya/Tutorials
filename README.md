@@ -2,7 +2,7 @@
 
 ## Python Environment
 
-- [Configuring PyCharm with Python interpreter](Python/ConfiguringPyCharmWithPythonInterpreter.md)
+- [Configuring Your Local Anconda Environment with PyCharm](Python/ConfiguringYourLocalAnacondaEnvironmentWithPyCharm.md)
 - [Configuring Your Conda Environment on Tufts HPC](Python/ConfiguringYourCondaEnvironmentOnTuftsHPC.md)
 
 ## Ubuntu
