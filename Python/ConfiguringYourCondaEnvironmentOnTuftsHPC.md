@@ -3,18 +3,18 @@
 
 - You need an anaconda base installation, which will be shared across all your projects (and possibly shared with other people), and an individual conda environment for each of your projects. This document will guide you through setup of both.
 
-- If possible, coordinate with other users in your lab to use a shared Anaconda base installation directory. This stuff is big, and if everyone gets their own copy, it takes up a lot of space.
+- If possible, coordinate with other users in your lab to use a shared Anaconda base installation directory. This stuff is big, and if everyone gets their own copy, it takes a lot of time and space; but if you all share a common base, and create individual environments, it utilizes hard links effectively, to save time and space.
 
   - If there is a pre-existing anaconda3 installation available, this is the easiest way to use it:
 
          cd /cluster/tufts/SOMELAB/anaconda3/bin
-         ./conda init --dry-run
+         ./conda init
      
-  - You should see `conda init` wants to modify your `.bashrc`. Run again without `--dry-run`, then logout and login. You should see your prompt preceded by `(base)` .
+  - You should see it modifies your `.bashrc`. Logout and login. You should see your prompt preceded by `(base)` .
 
   - Skip all the steps below, until "After you have (base)"
 
-- Your home directory does not have enough space for Anaconda installation. So, request for extra storage or get access to a lab research storage space.
+- Your home directory does not have enough space for Anaconda installation. So, request for extra storage or get access to a lab research storage space under `/cluster/tufts/SOMELAB`.
 
 - Before you begin: 
 	- Login via ssh to login.cluster.tufts.edu
@@ -26,7 +26,7 @@
 	
 - In your local web browser, go to https://www.anaconda.com/ > Download > Linux > Right-click the "64bit x86" link, copy URL
 
-- Do this on a compute node:
+- Do this on a compute node (via above `srun` command):
 
 - wget the URL 
 	
@@ -36,7 +36,7 @@
 	- Accept license
 	- Installation directory: 
 		- You cannot use your home directory; not enough disk space.
-		- Use something like this: `/cluster/tufts/SOMELAB/USERMANE/anaconda3`
+		- Use something like this: `/cluster/tufts/SOMELAB/USERMANE/anaconda3` (ideally, make it a location that is shared with your lab coworkers)
 		- Yes, initialize Anaconda3 by running conda init
 	
 - The installer has modified your `~/.bashrc` to source the new conda environment.
@@ -46,6 +46,18 @@
 - You should see your prompt preceded by `(base)` which means the anaconda base environment is available, and you have not activated any project environments.
 
 #### After you have `(base)`
+
+- Personally, I don't *always* want to load conda at login. I like to edit my bashrc and wrap the code block created by `conda init` in a `function` block.
+
+    - Like this:
+
+            function conda_base {
+                # >>> conda initialize >>>
+                ...
+                # <<< conda initialize <<<
+            }
+
+    - That way, after login, I type `conda_base` if I want to start conda `(base)`
 
 - After the anaconda base is installed, you will notice the command prompt preceded by `(base)`.  You can list your environments by `conda env list` and you can activate by `conda activate` and `conda deactivate`. 
 

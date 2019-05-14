@@ -24,11 +24,23 @@
 
 - With your project open, go to the `Terminal` tab (or go to View > Tool Windows > Terminal). Notice your complete anaconda environment is available in this Terminal, so you can run `conda` commands. Notice your project environment is activated, by the `(projectname)` preceding the command prompt.
 
-  - If you want your regular Terminal (outside of PyCharm) to also use this anaconda environment, do this one-time setup. Use the `--dry-run` option first to see what it will do, then repeat without `--dry-run`.
+  - If you want your regular Terminal (outside of PyCharm) to also have anaconda available, do this one-time setup, which will modify your `~/.bashrc` file:
 
           cd to the bin dir of your anaconda3 directory (probably ~/miniconda3/bin)
-          ./conda init --dry-run
+          ./conda init
 
+  - Personally, I don't *always* want to load conda at login. I like to edit my bashrc and wrap the code block created by `conda init` in a `function` block.
+  
+    - Like this:
+
+          function conda_base {
+              # >>> conda initialize >>>
+              ...
+              # <<< conda initialize <<<
+          }
+
+    - That way, after login, I type `conda_base` if I want to start conda `(base)`
+  
   - After running `conda init` and restarting your Terminal, you will notice the command prompt preceded by `(base)` indicating that conda is loaded, but no environment is activated. You can list your environments by `conda env list` and you can activate by `conda activate` and `conda deactivate`.
 
 - To install PyTorch 
