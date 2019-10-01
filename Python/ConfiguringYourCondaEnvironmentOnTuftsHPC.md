@@ -93,13 +93,16 @@
 
         conda deactivate
 
-#### To install PyTorch (for example, if you need PyTorch)
+#### If you need PyTorch
 
-  - Browse to https://pytorch.org > Get Started
-  - Use the configuration matrix.
-  - Paste the command into your anaconda-enabled Terminal
+- Browse to https://pytorch.org > Get Started
+- Use the configuration matrix.
+- Paste the command into your anaconda-enabled Terminal
+- If you also need torchvision
 
-#### To install TensorFlow (for example, if you need TensorFlow)
+        conda install -c pytorch torchvision
+
+#### If you need TensorFlow
 
 - Do not install any pip packages until after you have installed all conda packages. See [Using Pip in a Conda Environment](https://www.anaconda.com/using-pip-in-a-conda-environment/). If you need to install conda packages after you've already installed pip packages, it is recommended that you recreate your conda environment (see above).
 - Install tensorflow as follows:

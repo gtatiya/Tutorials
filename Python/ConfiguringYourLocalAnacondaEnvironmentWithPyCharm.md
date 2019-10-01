@@ -47,7 +47,10 @@
 
   - Browse to https://pytorch.org > Get Started
   - Use the configuration matrix.
-  - Paste the command into your anaconda-enabled Terminal (see above)
+  - Paste the command into your anaconda-enabled Terminal
+  - If you also need torchvision
+
+            conda install -c pytorch torchvision
 
 - To install TensorFlow 
   - Do not install any pip packages until after you have installed all conda packages. See [Using Pip in a Conda Environment](https://www.anaconda.com/using-pip-in-a-conda-environment/).  If you need to install conda packages after you've already installed pip packages, it is recommended that you recreate your conda environment (see above).
