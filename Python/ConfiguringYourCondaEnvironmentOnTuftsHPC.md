@@ -1,6 +1,13 @@
 
 # Configuring Your Conda Environment on Tufts HPC
 
+Please note the following references, which may also be useful, courtesy of the Tufts Research Tech group:
+
+* https://sites.tufts.edu/biotools/files/2019/07/conda_on_hpc.pdf
+* https://sites.tufts.edu/biotools/tutorials
+
+-----------------------------------
+
 - The difference between [miniconda](https://docs.conda.io/en/latest/miniconda.html) and [anaconda](https://www.anaconda.com/) is: miniconda is a packaging system; anaconda is miniconda plus a huge set of predefined packages. Generally speaking, it is better to use miniconda, and install the packages you need. Let the packaging system automatically handle the dependencies for you. 
 
 - You need a conda base installation, which will be shared across all your projects (and possibly shared with other people), and an individual conda environment for each of your projects. This document will guide you through setup of both.
