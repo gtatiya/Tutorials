@@ -7,7 +7,7 @@
 
 ## Basic conda notes
 
-* [Basic conda notes](Basic conda notes.md)
+* [Basic conda notes](BasicCondaNotes.md)
 
 ## Python SLURM job control via DASK
 
