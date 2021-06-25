@@ -5,6 +5,10 @@
 - [Configuring Your Local Anconda Environment with PyCharm](Python/ConfiguringYourLocalAnacondaEnvironmentWithPyCharm.md)
 - [Configuring Your Conda Environment on Tufts HPC](Python/ConfiguringYourCondaEnvironmentOnTuftsHPC.md)
 
+## Basic conda notes
+
+* [Basic conda notes](Basic conda notes.md)
+
 ## Python SLURM job control via DASK
 
 * [Python SLURM job control via DASK](Python/PythonSlurmDask.md)
